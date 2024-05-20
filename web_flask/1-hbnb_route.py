@@ -13,6 +13,7 @@ def root():
     """ This is a basic web route to the root directory"""
     return "Hello HBNB!"
 
+
 @app.route("/hbnb")
 def root_hbnb():
     """ This is a basic web route to the root directory"""
