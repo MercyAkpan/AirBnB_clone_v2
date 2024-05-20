@@ -8,6 +8,11 @@ app = Flask(__name__)
 app.url_map.strict_slashes = False
 
 
+@app.route("/")
+def root():
+    """ This is a basic web route to the root directory"""
+    return "Hello HBNB!"
+
 @app.route("/hbnb")
 def root_hbnb():
     """ This is a basic web route to the root directory"""
