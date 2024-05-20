@@ -1,5 +1,6 @@
+#!/usr/bin/python3
 from flask import Flask 
-
+""" This is a basic Flask web_server"""
 app = Flask(__name__)
 
 # Enable debugger --line 13 (for development only)
@@ -7,6 +8,7 @@ app = Flask(__name__)
 app.url_map.strict_slashes = False
 @app.route("/")
 def hello_world():
+	""" This is a basic web route to the root directory"""
   return "Hello HBNB!"
 
 if __name__ == "__main__":
