@@ -17,7 +17,7 @@ def root():
 @app.route("/hbnb")
 def root_hbnb():
     """ This is a basic web route to the root directory"""
-    return "HBNB!"
+    return "HBNB"
 
 
 if __name__ == "__main__":
