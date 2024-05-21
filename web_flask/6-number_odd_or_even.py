@@ -13,7 +13,7 @@ def display_number_template(n):
     """
         Converts n to a number , else returns 404 error.
         <int:n> ensures to convert parameter, to an integer, if possible
-        render_template simply needs a file.. 
+        render_template simply needs a file..
         that should be in the default: "templates" folder.
     """
     if n % 2 == 0:
@@ -21,6 +21,7 @@ def display_number_template(n):
     else:
         message = f"Number: {n} is odd"
     return render_template('6-number_odd_or_even.html', message=message)
+
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000, debug=True)
