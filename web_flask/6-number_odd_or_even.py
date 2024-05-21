@@ -16,7 +16,11 @@ def display_number_template(n):
         render_template simply needs a file.. 
         that should be in the default: "templates" folder.
     """
-    return render_template('6-number_odd_or_even.html', number=n)
+    if n % 2 == 0:
+        message = f"Number: {n} is even"
+    else:
+        message = f"Number: {n} is odd"
+    return render_template('6-number_odd_or_even.html', message=message)
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000, debug=True)
