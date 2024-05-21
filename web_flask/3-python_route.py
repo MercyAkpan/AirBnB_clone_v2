@@ -7,8 +7,9 @@ app = Flask(__name__)
 # Enforce strict slashes
 app.url_map.strict_slashes = False
 
+
 @app.route('/python/')
-@app.route("/python/<text>")  # <text> - acts as a placeholder, for dynamic URL.
+@app.route('/python/<text>')  # <text> -acts as a placeholder, for dynamic URL.
 def display_text(text="is cool"):
     # Replace underscores with spaces
     new_text = text.replace("_", " ")
