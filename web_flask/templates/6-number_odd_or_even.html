@@ -1,0 +1,18 @@
+<!-- number_template.html -->
+<!DOCTYPE html>
+<HTML lang="en">
+    <HEAD>
+        <TITLE>Number Template</TITLE>
+    </HEAD>
+    <BODY>
+        <H1>
+            Number: {{ number }} is 
+            {% if number % 2 == 0 %}
+                even
+            {% else %}
+                odd
+            {% endif %}
+        </H1>
+    </BODY>
+</HTML>
+
